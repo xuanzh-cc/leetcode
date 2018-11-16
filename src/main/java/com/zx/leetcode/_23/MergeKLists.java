@@ -7,6 +7,7 @@ public class MergeKLists {
         if (lists == null || lists.length <= 0) {
             return null;
         }
+
         SmallHeap heap = new SmallHeap(lists.length);
         for (int i = 0; i < lists.length; i++) {
             heap.insert(lists[i]);
